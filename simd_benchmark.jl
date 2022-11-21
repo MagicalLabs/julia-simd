@@ -1,4 +1,5 @@
 using Pkg
+Pkg.add(["SIMD", "BenchmarkTools", "Random"])
 using SIMD, Random, BenchmarkTools
 
 
@@ -31,3 +32,4 @@ print("slow test results: ", slow)
 # On Hayk's machine this is 4x faster.
 fast = @benchmark compute_load_simd($n)
 print("\nfast test results: ", fast)
+print("\n")

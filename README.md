@@ -1,8 +1,11 @@
-Run:
-- docker build . -t julia-simd:test
-- docker run julia-simd:test
+# julia-simd
 
-After this you'll see the following output:
+1. Run:
+```
+docker build -t *{julia-simd}* .
+```
 
-- slow test results: Trial(845.634 μs)
-- fast test results: Trial(182.495 μs)
+2. Run:
+```
+docker run julia-simd
+```
