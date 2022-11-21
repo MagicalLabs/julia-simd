@@ -2,7 +2,7 @@
 
 1. Run:
 ```
-docker build -t *julia-simd* .
+docker build -t julia-simd .
 ```
 
 2. Run:
